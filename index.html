@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
+
 <head>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -9,10 +10,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Estrelas do amanhã</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Alice&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alice&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="styles/index.css">
 </head>
+
 <body>
   <div id="app">
     <main>
@@ -24,6 +28,40 @@
 
         <h1>Formulário de matrícula</h1>
         <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+
+        <form method="post" enctype="multipart/form-data">
+          <fieldset class="child-info">
+            <legend>Informações da Criança</legend>
+
+            <div class="input-wrapper">
+              <label for="fullname">Nome Completo</label>
+              <input id="fullname" type="text" placeholder="Qual o nome da Criança">
+            </div>
+
+            <div class="input-wrapper"></div>
+            <label for="birth">Data de nascimento</label><input type="date" id="birth" lang="pt-BR">
+
+            <div class="select-wrapper">
+              <label for="gender">Sexo</label>
+              <select name="gender" id="gender">
+                <option value="female">Feminino</option>
+                <option value="male">Masculino</option>
+                <option value="na">Prefiro não Responder</option>
+              </select>
+            </div>
+
+            <div class="textarea-wrapper">
+              <label for="medical-info">Informações Médicas</label>
+              <textarea name="medical-info" id="medical-info" cols="30" rows="10" placeholder="A Criança possui alguma condição medica? (Se sim, especifique)"></textarea>
+            </div>
+
+            <div class="droparea-wrapper">
+              <input type="file" name="birth-file" id="birth-file">
+              <img src="assets/icons/cloud-upload.svg" alt="">
+              <p>Clique aqui para<br> selecionar os arquivos</p>
+            </div>
+          </fieldset>
+        </form>
       </div>
     </main>
 
@@ -40,4 +78,5 @@
     </aside>
   </div>
 </body>
+
 </html>
