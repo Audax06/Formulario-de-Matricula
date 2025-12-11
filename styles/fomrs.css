@@ -1,3 +1,5 @@
+@import url(fields/index.css);
+
 form {
   margin-top: 3rem;
 }
@@ -5,7 +7,7 @@ form {
 fieldset {
   border: none;
   display: grid;
-  gap: 1.5 rem;
+  gap: 1.5rem;
 }
 
 legend {

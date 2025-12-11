@@ -8,11 +8,12 @@ input, textarea, select {
 
   padding: .75rem 1rem;
   font: var(--text);
+  color: var(--text-primary);
 }
 
 label {
   font: var(--text-sm);
-  color: var(--text-secundary);
+  color: var(--text-secondary);
   display: block;
   margin-bottom: .25rem;
 }
@@ -52,7 +53,7 @@ select {
   gap: 1.25rem;
 }
 
-.input-wrapper:has([disabel]){
+.input-wrapper:has([disabled]){
   opacity: .5;
 }
 
